@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Freedom 4 All</title>
+<link rel="icon" type="image/x-icon" href="/favicon-32x32.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body{
+       background-color: #353535;
+       color: white;
+      }
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color:  #454545;
+}
+
+.link {
+  color:rgb(64, 255, 0);
+}
+
+.light-mode {
+  .link {
+  color:blue;
+   }
+  background-color: white;
+  color: black;
+   .content {
+  background-color: #f1f1f1;
+  color: black;
+        }
+        body{
+       
+       color: black;
+      }
+
+
+}
+
+
+</style>
+</head>
+<body>
+
+<h1 style="display: flex; justify-content: center;">Freedom 4 ALL</h1> 
+
+<p>Click to expand list.</p>
+
+<!-- search box -->
+<div> 
+  <input title="&quot;Esc&quot; to clear form. &#013;&quot;Enter&quot; to find." placeholder="Find in page" type="text" id="search">
+  <button title="Clear search box" onclick="document.getElementById('search').value = ''">X</button>
+  <input title="click to find" type="button" value="Find" onclick="search(document.getElementById('search').value)">
+  <script>
+    function search(string){
+      window.find(string);
+    }
+    document.getElementById('search').addEventListener('keydown', function(event) {
+      if (event.key === 'Enter') {
+        search(document.getElementById('search').value);
+      }
+    });
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        document.getElementById('search').value = '';
+      }
+    });
+  </script>
+   &nbsp; &nbsp;<button title="Clear search box" onclick="darkmodeFunction()">Light / Dark</button>
+  <script>
+    function darkmodeFunction() {
+       var element = document.body;
+       element.classList.toggle("light-mode");
+    }
+    </script>
+</div> <br>
+
+<button type="button" class="collapsible">Mix Config Subscription (Vmess, Vless, Reality, Trojan, Shadowsocks)</button>
+<div class="content"> <br>
+<p>1) V2ray (v2rayNg, v2flyNG, Matsuri, NekoBox and ...):
+    <br> hamburger menu (&#9776) >> Subscription group setting >> plus button (+) >> type custom name in "remarks" >> paste "copied url from the list bellow" in "Optional URL box" >> check button (&#10004) >> back to home >> ellipsis menu(3dot menu &#8942;) >> Update Subscription. </p>
+<p>2) Clash (android and meta has same setting):
+    <br> in home page >> Profile button >> plus button (+) >> "URL" button >> paste "copied url from the list bellow" in "URL box" >> set "Auto Update" to 60 (optional) >> save button (&#128427) >> back to home >> tap on Start button (top of profile button) </p>
+<p>3) SurfBoard:
+    <br> Profiles (&#128193) button >> plus button (+) >> "Import from URL" button >> paste "copied url from the list bellow" in "URL box" >> tap on "Import" button >> back to "Dashboard" (&#9871) >> tap on Play button (&#10148) </p>
+<a class="link" title="Download universal apk from udrop" href="https://www.udrop.com/Krsn/v2rayNG.apk" target="_blank">V2ray</a>
+<button onclick="displayText1()">Click to select link</button>
+    <div id="text-box1"></div>
+
+    <script>
+        function displayText1() {
+            const textBox = document.getElementById('text-box1');
+            textBox.textContent = 'https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/mix_base64';
+            textBox.style.display = 'block';
+
+            // Select the displayed text
+            const range = document.createRange();
+            range.selectNodeContents(textBox);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+        }
+    </script> <br>
+<a class="link" title="Download universal apk from udrop" href="https://www.udrop.com/Kp91/Clash(android).apk" target="_blank">Clash (android)</a>
+<button onclick="displayText2()">Click to select link</button>
+    <div id="text-box2"></div>
+
+    <script>
+        function displayText2() {
+            const textBox = document.getElementById('text-box2');
+            textBox.textContent = 'https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/clash/mix.yml';
+            textBox.style.display = 'block';
+
+            // Select the displayed text
+            const range = document.createRange();
+            range.selectNodeContents(textBox);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+        }
+    </script> <br>
+<a class="link" title="Download universal apk from udrop" href="https://www.udrop.com/Kp90/Clash(meta).apk" target="_blank">Clash (meta)</a>
+<button onclick="displayText3()">Click to select link</button>
+    <div id="text-box3"></div>
+
+    <script>
+        function displayText3() {
+            const textBox = document.getElementById('text-box3');
+            textBox.textContent = 'https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/meta/mix.yml';
+            textBox.style.display = 'block';
+
+            // Select the displayed text
+            const range = document.createRange();
+            range.selectNodeContents(textBox);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+        }
+    </script> <br>
+<a class="link" title="Download universal apk from udrop" href="https://www.udrop.com/Kp92/Surfboard.apk" target="_blank">Surfboard</a>
+<button onclick="displayText4()">Click to select link</button>
+    <div id="text-box4"></div>
+
+    <script>
+        function displayText4() {
+            const textBox = document.getElementById('text-box4');
+            textBox.textContent = 'https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/surfboard/mix';
+            textBox.style.display = 'block';
+
+            // Select the displayed text
+            const range = document.createRange();
+            range.selectNodeContents(textBox);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+        }
+    </script> <br>
+
+<a class="link" title="Latest release on GitHub" href="https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/latest" target="_blank">NekoBox (sort by location)</a>
+<button onclick="displayText5()">Click to select link</button>
+    <div id="text-box5"></div>
+    <script>
+      function displayText5() {
+          const textBox = document.getElementById('text-box5');
+          textBox.textContent = 'https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/singbox/nekobox/118/mix.json';
+          textBox.style.display = 'block';
+
+          // Select the displayed text
+          const range = document.createRange();
+          range.selectNodeContents(textBox);
+          const selection = window.getSelection();
+          selection.removeAllRanges();
+          selection.addRange(range);
+      }
+  </script> <br>
+
+    <a class="link" title="Latest release on GitHub" href="https://github.com/yebekhe/SingBox-UI/releases/latest" target="_blank">SingBox MIX (sort by location)</a>
+    <button onclick="displayText6()">Click to select link</button>
+        <div id="text-box6"></div>
+        <script>
+          function displayText6() {
+              const textBox = document.getElementById('text-box6');
+              textBox.textContent = 'https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/singbox/sfasfi/mix.json';
+              textBox.style.display = 'block';
+  
+              // Select the displayed text
+              const range = document.createRange();
+              range.selectNodeContents(textBox);
+              const selection = window.getSelection();
+              selection.removeAllRanges();
+              selection.addRange(range);
+          }
+      </script>  <br>
+      
+      <a class="link" title="Latest release on GitHub" href="https://github.com/yebekhe/SingBox-UI/releases/latest" target="_blank">SingBox VMESS (sort by location)</a>
+      <button onclick="displayText7()">Click to select link</button>
+          <div id="text-box7"></div>
+          <script>
+            function displayText7() {
+                const textBox = document.getElementById('text-box7');
+                textBox.textContent = 'https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/singbox/sfasfi/vmess.json';
+                textBox.style.display = 'block';
+    
+                // Select the displayed text
+                const range = document.createRange();
+                range.selectNodeContents(textBox);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+            }
+        </script> <br>
+
+<a class="link" title="Latest release on GitHub" href="https://github.com/yebekhe/SingBox-UI/releases/latest" target="_blank">SingBox VLESS (sort by location)</a>
+<button onclick="displayText8()">Click to select link</button>
+    <div id="text-box8"></div>
+    <script>
+      function displayText8() {
+          const textBox = document.getElementById('text-box8');
+          textBox.textContent = 'https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/singbox/sfasfi/vless.json';
+          textBox.style.display = 'block';
+
+          // Select the displayed text
+          const range = document.createRange();
+          range.selectNodeContents(textBox);
+          const selection = window.getSelection();
+          selection.removeAllRanges();
+          selection.addRange(range);
+      }
+  </script> <br>
+        
+        
+        <p></p>
+
+
+</div>
+<!-- update -->
+<button type="button" class="collapsible">Telegram MTProto Proxy <i class="fa fa-github" ></i> - <i class="fa fa-telegram"></i></button>
+<div class="content"> <br>
+<a class="link" href="./MTProtoCollector.html" target="_blank">Open "Telegram Proxy" page &#127381</a><br>
+<h2>How to use;</h2>
+<p>1. click on "Open "Telegram Proxy" page &#127381"  <a class="link" href="./MTProtoCollector.html">"here"</a><br>
+2. in new page, click on any "Connect" button (blue button) (after that, "Telegram" will open and show you a proxy connection confirmation message)<br>
+3. click on "CONNECT PROXY". (in "Desktop" version, click on "Enable")</p>
+<h2>Notes</h2>
+<h4>MTproto Collector</h4>
+<p>This project is intended for educational purposes only. Any other use of it, including commercial, personal, or non-educational use, is not accepted! <br>
+
+  This is a PHP script that collects MTproto Proxies links from various Channels and saves them to a JSON file.</p>
+  <h4>Proxies Sources</h4>
+  <p>This project currently utilizes Channels as the source of MTproto Proxies.<br>
+
+    You can check for sources in <a class="link" href="https://raw.githubusercontent.com/yebekhe/MTProtoCollector/main/modules/config.php">here</a></p>
+    <h4>Project Source</h4>
+  <p>This project is a customized fork of the "YeBeKhe MTProto Collector" project.<br>
+
+    You can check for source in <a class="link" href="https://github.com/yebekhe/MTProtoCollector">here</a> <i class="fa fa-github" ></i></p>
+</div>
+
+<!-- Original singbox -->
+
+<button type="button" class="collapsible">Sing-Box (SingBox - original) <i class="fa fa-github"> </i> - <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-television"></i> </button>
+<div class="content"> <br>
+  <p>The universal proxy platform.</p>
+  <a class="link" href="https://github.com/SagerNet/sing-box" target="_blank">Sing-Box (Project on GitHub)</a> <i class="fa fa-github"></i> <br>
+    <h2>Clients</h2>
+    <h3>Android (SFA - Sing-Box For Android) <i class="fa fa-android"></i></h3>
+   
+<a class="link" href="https://github.com/SagerNet/sing-box/releases" target="_blank">Sing-Box SFA (Releases on GitHub)</a> <br>
+<a class="link" href="https://github.com/SagerNet/sing-box/releases/latest" target="_blank">Sing-Box SFA (Latest on GitHub) &#127381</a> <br>
+<a class="link" href="https://github.com/SagerNet/sing-box/releases/download/v1.4.1/SFA-1.4.1-universal.apk" target="_blank">Sing-Box SFA 1.4.1 (all arm) (GitHub)</a> <br> 
+<a class="link" href="https://github.com/SagerNet/sing-box/releases/download/v1.4.1/SFA-1.4.1-arm64-v8a.apk" target="_blank">Sing-Box SFA 1.4.1 (arm64-v8a) (GitHub)</a> <br>
+<a class="link" href="https://github.com/SagerNet/sing-box/releases/download/v1.4.1/SFA-1.4.1-armeabi-v7a.apk" target="_blank">Sing-Box SFA 1.4.1 (armeabi-v7a) (GitHub)</a> <br> <br>
+
+<a class="link" href="https://install.appcenter.ms/users/nekohasekai/apps/sfa/distribution_groups/publictest" target="_blank">Sing-Box SFA Latest (appcenter) &#127381</a> <br> <br>
+
+<a class="link" href="https://www.udrop.com/KIqj/SFA-1.4.1-universal.apk" target="_blank">Sing-Box SFA 1.4.1 (all arm) (udrop)</a> <br> 
+<a class="link" href="https://www.udrop.com/KIqi/SFA-1.4.1-arm64-v8a.apk" target="_blank">Sing-Box SFA 1.4.1 (arm64-v8a) (udrop)</a> <br>
+<a class="link" href="https://www.udrop.com/KIqh/SFA-1.4.1-armeabi-v7a.apk" target="_blank">Sing-Box SFA 1.4.1 (armeabi-v7a) (udrop)</a> <br> <br>
+
+<a class="link" href="https://mega.nz/file/snNUUSjT#gqM9XmTlhpTaqySMVlZghs8v1I5TmPrUtykAw_mMPAg" target="_blank">Sing-Box SFA 1.4.1 (all arm) (MEGA)</a> <br> 
+<a class="link" href="https://mega.nz/file/QuMFRA7a#hlFNlhrH-G0a3hM1Oa5sc1eWADdYwY5CkrjhYclNLJo" target="_blank">Sing-Box SFA 1.4.1 (arm64-v8a) (MEGA)</a> <br>
+<a class="link" href="https://mega.nz/file/duUk1S7J#HSYCkiNKimqEcSXhQXN--t82b4OqJqaU96XYdyEP1zI" target="_blank">Sing-Box SFA 1.4.1 (armeabi-v7a) (MEGA)</a> <br> <br>
+ <h4>Package Manager</h4>
+ <p>Termux:<br> 
+  pkg add sing-box</p> <br>
+
+<h3>iOS (SFI - Sing-Box For iOS) <i class="fa fa-apple"></i> </h3>
+<a class="link" href="https://apps.apple.com/us/app/sing-box/id6451272673" target="_blank">Sing-Box SFI (App Store) &#127381</a> <br> <br>
+
+
+<h3>macOS (SFM - Sing-Box For macOS) <i class="fa fa-apple"></i> </h3>
+<a class="link" href="https://apps.apple.com/us/app/sing-box/id6451272673" target="_blank">Sing-Box SFM (App Store) &#127381</a> <br> 
+<h4>Package Manager</h4>
+ <p>Homebrew (core): <br>
+  brew install sing-box <br> <br>
+  Homebrew (Tap): <br>
+  brew tap sagernet/sing-box <br>
+  brew install sagernet/sing-box/sing-box</p> <br>
+
+
+<h3>Apple tvOS (SFT - Sing-Box For Apple tvos) <i class="fa fa-television"></i> </h3>
+<a class="link" href="https://testflight.apple.com/join/AcqO44FH" target="_blank">Sing-Box SFT (TestFlight) &#127381</a> <br> <br>
+    
+ <p></p>
+</div>
+
+<button type="button" class="collapsible">Sing-BoxUI (SingBoxUI - YeBeKhe) <i class="fa fa-github" ></i> - <i class="fa fa-windows" ></i></button>
+<div class="content"> <br>
+  <p>SingBoxUI is a graphical user interface application that allows users to connect to the SingBox service and manage 
+    their subscription. It provides an easy-to-use interface for starting and terminating the SingBox application and 
+    accessing the SingBox dashboard.</p>
+    <h2>Links</h2>
+<a class="link" href="https://github.com/yebekhe/SingBox-UI" target="_blank">SingBox-UI (Project on GitHub)</a> <i class="fa fa-github"></i> <br>
+<a class="link" href="https://github.com/yebekhe/SingBox-UI/releases" target="_blank">SingBox-UI (Releases on GitHub)</a> <br>
+<a class="link" href="https://github.com/yebekhe/SingBox-UI/releases/latest" target="_blank">SingBox-UI (Latest on GitHub) &#127381</a> <br>
+<a class="link" href="https://github.com/yebekhe/Singbox-UI/releases/download/v3.1.0/SingboxUI.zip" target="_blank">SingBox-UI 3.1.0 (windows) (GitHub)</a> <br> <br>
+<a class="link" href="https://www.udrop.com/KItV/SingboxUI.zip" target="_blank">SingBox-UI 3.1.0 (windows) (udrop)</a> <br>
+<a class="link" href="https://mega.nz/file/4nUHHKaY#2H79t5tc9u478fcLRxAeSqGLxn_OX8HiI6TDtAomNXg" target="_blank">SingBox-UI 3.1.0 (windows) (MEGA)</a> <br>
+    <h3>Usage</h3>
+    <p>1. Download and unzip "SingBoxUI" to "Desktop". <br>
+      2. right click on "SingboxUI.exe" and click on "Run as administrator". <br>
+      3. in new window, click on "Yes". <br>
+    4. Click the "CONNECT" button (red button) to start the SingBox application. (you may have click on "Allow" button in first time for new network adapter.) <br>
+  5. Once connected, the IP address and location will be displayed. <br>
+6. Click the "DISCONNECT" button (green button) to stop the SingBox application. <br>
+* Click the "&#128195 OPEN SING-BOX DASHBOARD" button to open the SingBox dashboard. *</p> <br>
+<h3>May help</h3>
+<p>* to "Run as administrator" every time automatically; <br>
+  1. hold "Shift <i class="fa fa-arrow-up"></i>" button on keyboard and right click on "SingboxUI.exe"<br> 
+  2. click on "properties" <br>
+  3. go to "Compatibility" tab <br> 
+  4. check "Run this program as an administrator" <br> 
+  5. click on "OK" button. <br> <br>
+
+* To avoid error messages and file deletion by Windows Defender; <br> 
+1. open "Windows Defender" <br> 
+2. open "Virus & threat protection" (left menu) <br> 
+3. in "Virus & threat protection settings" section, click on "Manage settings" <br>
+4. scroll down (at the end of the page), click on "Add or remove exclusions" <br>
+5. click on "Yes" (if "User Account Control window" shows up) <br>
+6. click on "Add an exclusion" button <br>
+7. click on "Folder" <br>
+8. in "Select Folder window" select "SingBoxUI" folder (in desktop). <br> <br>
+
+*to create a shortcut in desktop; <br>
+1. hold "Shift <i class="fa fa-arrow-up"></i>" button on keyboard and right click on "SingboxUI.exe" <br>
+2. click on "Create shortcut" <br> 
+3. now, cut the "SingboxUI - Shortcut" and paste to Desktop</p>
+
+ <p></p>
+</div>
+
+<button type="button" class="collapsible">nthLink <i class="fa fa-windows"style="font-size:14px"></i> <i class="fa fa-android" style="font-size:14px"></i> <i class="fa fa-apple"></i> </button>
+<div class="content"> <br>
+  <p>nthLink is an app for safe Internet access that works even when content is blocked.</p>
+  <a class="link" href="https://www.nthlink.com" target="_blank">nthLink (Website)</a> <i class="fa fa-globe"></i> <br>
+<a class="link" href="https://s3.us-west-1.amazonaws.com/dwo-jar-kmf-883/nthlink-6_1_1.apk" target="_blank">nthLink 6.1.1 (all arm) (Direct)</a> <a class="link" href="https://www.virustotal.com/gui/file/695531f45ea0b501fc1004a06b5443c068e7121ed5ff6b34a343421d9536a989" target="_blank"><img title="VirusTotal Result" src="http://freedom4all.unaux.com/virustotal-icon.svg" width="16" height="16"> </a> <br>
+<a class="link" href="https://www.udrop.com/KJO8/nthlink-6_1_1.apk" target="_blank">nthLink 6.1.1 (all arm) (udrop)</a> <a class="link" href="https://www.virustotal.com/gui/file/695531f45ea0b501fc1004a06b5443c068e7121ed5ff6b34a343421d9536a989" target="_blank"><img title="VirusTotal Result" src="http://freedom4all.unaux.com/virustotal-icon.svg" width="16" height="16"> </a> <br> 
+<a class="link" href="https://mega.nz/file/Jq1XgbQa#1deTsoP5E4J8pJSBeR11T1L6ZhNHMzbsVleRzoQJ3L8" target="_blank">nthLink 6.1.1 (all arm) (MEGA)</a> <a class="link" href="https://www.virustotal.com/gui/file/695531f45ea0b501fc1004a06b5443c068e7121ed5ff6b34a343421d9536a989" target="_blank"><img title="VirusTotal Result" src="http://freedom4all.unaux.com/virustotal-icon.svg" width="16" height="16"> </a> <br> <br> 
+
+<a class="link" href="https://s3.us-west-1.amazonaws.com/dwo-jar-kmf-883/nthlink-win-6_1_0.exe" target="_blank">nthLink 6.1.0 (Windows) (Direct)</a> <a class="link" href="https://www.virustotal.com/gui/file/e11fb2c38f35a6da4e73ba6769e0f1b076760e6b409504003ce968fbaaf0a1fc" target="_blank"><img title="VirusTotal Result" src="http://freedom4all.unaux.com/virustotal-icon.svg" width="16" height="16"> </a> <br>
+<a class="link" href="https://www.udrop.com/KJOa/nthlink-win-6_1_0.exe" target="_blank">nthLink 6.1.0 (Windows) (udrop)</a> <a class="link" href="https://www.virustotal.com/gui/file/e11fb2c38f35a6da4e73ba6769e0f1b076760e6b409504003ce968fbaaf0a1fc" target="_blank"><img title="VirusTotal Result" src="http://freedom4all.unaux.com/virustotal-icon.svg" width="16" height="16"> </a> <br> 
+<a class="link" href="https://mega.nz/file/939CmDwI#H0Lf6z6I4bXDojGqwMA13tIb7qYbNieEbDca1NE-e9Q" target="_blank">nthLink 6.1.0 (Windows) (MEGA)</a> <a class="link" href="https://www.virustotal.com/gui/file/e11fb2c38f35a6da4e73ba6769e0f1b076760e6b409504003ce968fbaaf0a1fc" target="_blank"><img title="VirusTotal Result" src="http://freedom4all.unaux.com/virustotal-icon.svg" width="16" height="16"> </a> <br> <br>
+
+<a class="link" href="https://apps.apple.com/us/app/nthlink/id1467297604" target="_blank">nthLink (Latest) (App Store) &#127381</a>  <br> <br>
+<p></p>
+</div>
+
+<button type="button" class="collapsible">NekoBox <i class="fa fa-github" ></i> - <i class="fa fa-android" style="font-size:14px"></i></button>
+<div class="content"> <br>
+<a class="link" href="https://github.com/MatsuriDayo/NekoBoxForAndroid" target="_blank">v2flyNG (Project on GitHub)</a> <i class="fa fa-github"></i> <br>
+<a class="link" href="https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/latest" target="_blank">v2flyNG (Latest on GitHub) &#127381</a> <br>
+<a class="link" href="https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/download/1.2.3/NB4A-1.2.3-arm64-v8a.apk" target="_blank">NekoBoxForAndroid 1.2.3 (arm64-v8a) (GitHub)</a> <br>
+<a class="link" href="https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/download/1.2.3/NB4A-1.2.3-armeabi-v7a.apk" target="_blank">NekoBoxForAndroid 1.2.3 (armeabi-v7a) (GitHub)</a> <br> <br>
+<a class="link" href="https://www.udrop.com/KGqm/NB4A-1.2.3-arm64-v8a.apk" target="_blank">NekoBoxForAndroid 1.2.3 (arm64-v8a) (udrop)</a> <br>
+<a class="link" href="https://www.udrop.com/KGql/NB4A-1.2.3-armeabi-v7a.apk" target="_blank">NekoBoxForAndroid 1.2.3 (armeabi-v7a) (udrop)</a> <br><br>
+<a class="link" href="https://mega.nz/file/lykygARY#6GCAtsqKmcVSp1B8w8LVe5vs1BZBuImUDiNEP4AsJdY" target="_blank">NekoBoxForAndroid 1.2.3 (arm64-v8a) (MEGA)</a> <br>
+<a class="link" href="https://mega.nz/file/hy0UXYAY#U4ZyxGpA4k-_NRSaCf-OyBcTVJzfFR0yVR9ttqcyfWE" target="_blank">NekoBoxForAndroid 1.2.3 (armeabi-v7a) (MEGA)</a> <br> 
+<h2>Notes:</h2>
+<h4>Add subscription;</h4>
+<p> 1. Hamburger menu (&#9776) <br>
+  2. group >> plus button (+) (top right) <br>
+  3. type custom name in "Group Name" <br> 
+  4. Change "Group Type" from "Basic" to "Subscription" <br>
+  5. paste "copied url from the "Mix Config Subscription" list to "Subscription Link" >> check button (&#10004) <br>
+  6. back to home. </p>
+<h4>Esplit tunneling (apps);</h4>
+<p> 1. Hamburger menu (&#9776) <br>
+  2. Route >> plus button (+) (top right) <br> 
+  3. type custom name in "Route Name" <br>
+  4. open "Application" <br>
+  5. turn on apps you want to tunnel: "outbount = Proxy" (or don't want to tunnel: "outbount = Bypass") <br> 
+  6. scroll down and change "outbound" to "Proxy" or "Bypass" >> check button (&#10004) <br> 
+  7. back to home. </p>
+
+  <h4>Exclude Routing (".ir" domains);</h4>
+<p> 1. Hamburger menu (&#9776) <br>
+  2. Route >> plus button (+) (top right) <br> 
+  3. type custom name in "Route Name" <br>
+  4. open "domain"<br>
+  5. type "domain:ir" and click on "OK" button <br> 
+  6. scroll down and change "outbound" to "Bypass" >> check button (&#10004) <br> 
+  7. back to home. </p>
+
+  <h4>Exclude Routing (iran server but none ".ir" domains);</h4>
+  <p> 1. open "none"ir"domains" from <a class="link" href="./server/NekoBox/none-ir-domains.txt" target="_blank">here</a> <br>
+    2. copy all text inside this page into your clipboard <br>
+    3. open NekoBox <br>
+    4. Hamburger menu (&#9776) <br>
+    5. Route >> plus button (+) (top right) <br> 
+    6. type custom name in "Route Name" <br>
+    7. open "domain"<br>
+    8. paste all text from your clipboard and click on "OK" button <br>
+    9. scroll down and change "outbound" to "Bypass" >> check button (&#10004) <br> 
+    10. back to home. </p>
+
+    <h4>Exclude Routing (Arvan Cloud IPs);</h4>
+    <p> 1. open "ips" from <a class="link" href="https://www.arvancloud.ir/fa/ips.txt" target="_blank">here</a> <br>
+      2. copy all text inside this page into your clipboard <br>
+      3. open NekoBox <br>
+      4. Hamburger menu (&#9776) <br>
+      5. Route >> plus button (+) (top right) <br> 
+      6. type "Arvan Cloud" in "Route Name" <br>
+      7. open "ip"<br>
+      8. paste all text from your clipboard and click on "OK" button <br>
+      9. scroll down and change "outbound" to "Bypass" >> check button (&#10004) <br> 
+      10. back to home. </p>
+<p></p>
+</div>
+
+<button type="button" class="collapsible">Clash (include meta) <i class="fa fa-github" ></i> - <i class="fa fa-windows"style="font-size:14px"></i> <i class="fa fa-android" style="font-size:14px"></i></button>
+<div class="content"> <br>
+<a class="link" href="https://github.com/Kr328/ClashForAndroid" target="_blank">ClashForAndroid (Project on GitHub)</a> <i class="fa fa-github"></i> <br>
+<a class="link" href="https://github.com/Kr328/ClashForAndroid/releases/latest" target="_blank">ClashForAndroid (Latest on GitHub) c</a> <br>
+<a class="link" href="https://github.com/Kr328/ClashForAndroid/releases/download/v2.5.12/cfa-2.5.12-foss-universal-release.apk" target="_blank">ClashForAndroid 2.5.12 (all arm) (GitHub)</a> <br>
+<a class="link" href="https://github.com/Kr328/ClashForAndroid/releases/download/v2.5.12/cfa-2.5.12-foss-arm64-v8a-release.apk" target="_blank">ClashForAndroid 2.5.12 (arm64-v8a) (GitHub)</a> <br>
+<a class="link" href="https://github.com/Kr328/ClashForAndroid/releases/download/v2.5.12/cfa-2.5.12-foss-armeabi-v7a-release.apk" target="_blank">ClashForAndroid 2.5.12 (armeabi-v7a) (GitHub)</a> <br> <br>
+<a class="link" href="https://www.udrop.com/Krss/cfa-2.5.12-foss-universal-release.apk" target="_blank">ClashForAndroid 2.5.12 (all arm) (udrop)</a> <br>
+<a class="link" href="https://www.udrop.com/Krsp/cfa-2.5.12-foss-arm64-v8a-release.apk" target="_blank">ClashForAndroid 2.5.12 (arm64-v8a) (udrop)</a> <br>
+<a class="link" href="https://www.udrop.com/Krsq/cfa-2.5.12-foss-armeabi-v7a-release.apk" target="_blank">ClashForAndroid 2.5.12 (armeabi-v7a) (udrop)</a> <br> <br>
+
+<a class="link" href="https://github.com/MetaCubeX/ClashMetaForAndroid" target="_blank">ClashMetaForAndroid (Project on GitHub)</a> <i class="fa fa-github"></i> <br>
+<a class="link" href="https://github.com/MetaCubeX/ClashMetaForAndroid/releases/latest" target="_blank">ClashMetaForAndroid (Latest on GitHub) &#127381</a> <br>
+<a class="link" href="https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.8.8/cmfa-2.8.8-meta-universal-release.apk" target="_blank">ClashMetaForAndroid 2.8.8 (all arm) (GitHub)</a> <br>
+<a class="link" href="https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.8.8/cmfa-2.8.8-meta-arm64-v8a-release.apk" target="_blank">ClashMetaForAndroid 2.8.8 (arm64-v8a) (GitHub)</a> <br>
+<a class="link" href="https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.8.8/cmfa-2.8.8-meta-armeabi-v7a-release.apk" target="_blank">ClashMetaForAndroid 2.8.8 (armeabi-v7a) (GitHub)</a> <br> <br>
+
+<a class="link" href="https://www.udrop.com/Kru7/cmfa-2.8.8-meta-universal-release.apk" target="_blank">ClashMetaForAndroid 2.8.8 (all arm) (udrop)</a> <br>
+<a class="link" href="https://www.udrop.com/Kru6/cmfa-2.8.8-meta-arm64-v8a-release.apk" target="_blank">ClashMetaForAndroid 2.8.8 (arm64-v8a) (udrop)</a> <br>
+<a class="link" href="https://www.udrop.com/Kru5/cmfa-2.8.8-meta-armeabi-v7a-release.apk" target="_blank">ClashMetaForAndroid 2.8.8 (armeabi-v7a) (udrop)</a> <br> <br>
+
+<a class="link" href="https://github.com/Fndroid/clash_for_windows_pkg" target="_blank">ClashForWindows (Project on GitHub)</a> <i class="fa fa-github"></i> <br>
+<a class="link" href="https://github.com/Fndroid/clash_for_windows_pkg/releases/latest" target="_blank">ClashForWindows (Latest on GitHub) &#127381</a> <br>
+<a class="link" href="https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.30/Clash.for.Windows.Setup.0.20.30.arm64.exe" target="_blank">ClashForWindows 0.20.30 (arm64) (GitHub)</a> <br>
+<a class="link" href="https://www.udrop.com/KrtS/Clash.for.Windows.Setup.0.20.30.arm64.exe" target="_blank">ClashForWindows 0.20.30 (arm64) (udrop)</a> <p></p>
+</div>
+
+<button type="button" class="collapsible">Orbot <i class="fa fa-github" ></i> - <i class="fa fa-android" style="font-size:14px"></i></button>
+<div class="content"> <br>
+<a class="link" href="https://github.com/guardianproject/orbot" target="_blank">Orbot for Android (Project on GitHub)</a> <i class="fa fa-github"></i> <br>
+<a class="link" href="https://github.com/guardianproject/orbot/releases/latest" target="_blank">Orbot for Android (Latest on GitHub) &#127381</a> <br>
+<a class="link" href="https://github.com/guardianproject/orbot/releases/download/17.1.0-BETA-2-tor.0.4.7.11/Orbot-17.1.0-BETA-2-tor.0.4.7.11-fullperm-universal-release.apk" target="_blank">Orbot for Android v17.1 BETA 2 (all arm) (GitHub)</a> <br>
+<a class="link" href="https://github.com/guardianproject/orbot/releases/download/17.1.0-BETA-2-tor.0.4.7.11/Orbot-17.1.0-BETA-2-tor.0.4.7.11-fullperm-arm64-v8a-release.apk" target="_blank">Orbot for Android v17.1 BETA 2 (arm64-v8a) (GitHub)</a> <br> <br>
+<a class="link" href="https://www.udrop.com/KvhM/Orbot-17.1.0-BETA-2-tor.0.4.7.11-fullperm-universal-release.apk" target="_blank">Orbot for Android v17.1 BETA 2 (all arm) (udrop)</a> <br> 
+<a class="link" href="https://www.udrop.com/KvhL/Orbot-17.1.0-BETA-2-tor.0.4.7.11-fullperm-arm64-v8a-release.apk" target="_blank">Orbot for Android v17.1 BETA 2 (arm64-v8a) (udrop)</a> <p></p>
+</div>
+
+<button type="button" class="collapsible">v2rayNG (include v2rayN) <i class="fa fa-github" ></i> - <i class="fa fa-windows"style="font-size:14px"></i> <i class="fa fa-android" style="font-size:14px"></i></button>
+<div class="content"> <br>
+<a class="link" href="https://github.com/2dust/v2rayNG" target="_blank">v2rayNG (Project on GitHub)</a> <i class="fa fa-github"></i> <br>
+<a class="link" href="https://github.com/2dust/v2rayNG/releases/latest" target="_blank">v2rayNG (Latest on GitHub) &#127381</a> <br>
+<a class="link" href="https://github.com/2dust/v2rayNG/releases/download/1.8.5/v2rayNG_1.8.5.apkk" target="_blank">v2rayNG 1.8.5 (all arm) (GitHub)</a> <br>
+<a class="link" href="https://github.com/2dust/v2rayNG/releases/download/1.8.5/v2rayNG_1.8.5_arm64-v8a.apk" target="_blank">v2rayNG 1.8.5 (arm64-v8a) (GitHub)</a> <br>
+<a class="link" href="https://github.com/2dust/v2rayNG/releases/download/1.8.5/v2rayNG_1.8.5_armeabi-v7a.apk" target="_blank">v2rayNG 1.8.5 (armeabi-v7a) (GitHub)</a> <br> <br>
+<a class="link" href="https://www.udrop.com/Krw9/v2rayNG_1.8.5.apk" target="_blank">v2rayNG 1.8.5 (all arm) (udrop)</a> <br>
+<a class="link" href="https://www.udrop.com/Krw8/v2rayNG_1.8.5_arm64-v8a.apk" target="_blank">v2rayNG 1.8.5 (arm64-v8a) (udrop)</a> <br>
+<a class="link" href="https://www.udrop.com/Krw7/v2rayNG_1.8.5_armeabi-v7a.apk" target="_blank">v2rayNG 1.8.5 (armeabi-v7a) (udrop)</a> <br> <br>
+<a class="link" href="https://github.com/2dust/v2rayN" target="_blank">v2rayN windows (Project on GitHub)</a> <i class="fa fa-github"></i> <br>
+<a class="link" href="https://github.com/2dust/v2rayN/releases/latest" target="_blank">v2rayN windows (Latest on GitHub) &#127381</a> <br>
+<a class="link" href="https://github.com/2dust/v2rayN/releases/download/6.23/v2rayN-With-Core.zip" target="_blank">v2rayN windows with core 6.23 (GitHub)</a> <p></p>
+</div>
+
+<button type="button" class="collapsible">v2flyNG <i class="fa fa-github" ></i> - <i class="fa fa-android" style="font-size:14px"></i></button>
+<div class="content"> <br>
+<a class="link" href="https://github.com/2dust/v2flyNG" target="_blank">v2flyNG (Project on GitHub)</a> <i class="fa fa-github"></i> <br>
+<a class="link" href="https://github.com/2dust/v2flyNG/releases/latest" target="_blank">v2flyNG (Latest on GitHub) &#127381</a> <br>
+<a class="link" href="https://github.com/2dust/v2flyNG/releases/download/1.7.19/v2flyNG_1.7.19.apk" target="_blank">v2flyNG 1.7.19 (all arm) (GitHub)</a> <br>
+<a class="link" href="https://github.com/2dust/v2flyNG/releases/download/1.7.19/v2flyNG_1.7.19_arm64-v8a.apk" target="_blank">v2flyNG 1.7.19 (arm64-v8a) (GitHub)</a> <br>
+<a class="link" href="https://github.com/2dust/v2flyNG/releases/download/1.7.19/v2flyNG_1.7.19_armeabi-v7a.apk" target="_blank">v2flyNG 1.7.19 (armeabi-v7a) (GitHub)</a> <br> <br>
+<a class="link" href="https://www.udrop.com/Krs8/v2flyNG_1.7.19.apk" target="_blank">v2flyNG 1.7.19 (all arm) (udrop)</a> <br>
+<a class="link" href="https://www.udrop.com/Krsb/v2flyNG_1.7.19_arm64-v8a.apk" target="_blank">v2flyNG 1.7.19 (arm64-v8a) (udrop)</a> <br>
+<a class="link" href="https://www.udrop.com/Krsf/v2flyNG_1.7.19_armeabi-v7a.apk" target="_blank">v2flyNG 1.7.19 (armeabi-v7a) (udrop)</a> <p></p>
+</div>
+
+<button type="button" class="collapsible">SurfBoard <i class="fa fa-github" ></i> - <i class="fa fa-android" style="font-size:14px"></i></button>
+<div class="content"> <br>
+<a class="link" href="https://github.com/getsurfboard/surfboard" target="_blank">SurfBoard (Project on GitHub)</a> <i class="fa fa-github"></i> <br>
+<a class="link" href="https://github.com/getsurfboard/surfboard/releases/latest" target="_blank">SurfBoard (Latest on GitHub) &#127381</a> <br>
+<a class="link" href="https://github.com/getsurfboard/surfboard/releases/download/2.21.0/mobile-universal-release.apk" target="_blank">SurfBoard 2.21.0 (all arm) (GitHub)</a> <br>
+<a class="link" href="https://github.com/getsurfboard/surfboard/releases/download/2.21.0/mobile-arm64-v8a-release.apk" target="_blank">SurfBoard 2.21.0 (arm64-v8a) (GitHub)</a> <br>
+<a class="link" href="https://github.com/getsurfboard/surfboard/releases/download/2.21.0/mobile-armeabi-v7a-release.apk" target="_blank">SurfBoard 2.21.0 (armeabi-v7a) (GitHub)</a> <br> <br>
+<a class="link" href="https://www.udrop.com/Krw6/SurfBoard-universal-release.apk" target="_blank">SurfBoard 2.21.0 (all arm) (udrop)</a> <br>
+<a class="link" href="https://www.udrop.com/Krw5/SurfBoard-arm64-v8a-release.apk" target="_blank">SurfBoard 2.21.0 (arm64-v8a) (udrop)</a> <br>
+<a class="link" href="https://www.udrop.com/Krw4/SurfBoard-armeabi-v7a-release.apk" target="_blank">SurfBoard 2.21.0 (armeabi-v7a) (udrop)</a> <p></p>
+</div>
+
+
+<button type="button" class="collapsible">1.1.1.1 (warp) <i class="fa fa-windows"style="font-size:14px"></i> <i class="fa fa-android" style="font-size:14px"></i> <i class="fa fa-apple" style="font-size:14px"></i></button>
+<div class="content"> <br>
+<a class="link" href="https://www.udrop.com/KG9O/1.1.1.1-Unlimited-v6.29.apk" target="_blank">1.1.1.1 Unlimited 6.29 (all arm) (udrop)</a> <a class="link" href="https://www.virustotal.com/gui/file/25241f51cc050569e42e397650ab57ea7763242e46d0058d84f2662b47242b9f" target="_blank"><img title="VirusTotal Result" src="http://freedom4all.unaux.com/virustotal-icon.svg" width="16" height="16"> </a> <br> 
+<a class="link" href="https://www.udrop.com/KG9P/1.1.1.1-ZeroTrust-v6.29.apk" target="_blank">1.1.1.1 ZeroTrust 6.29 (all arm) (udrop)</a> <a class="link" href="https://www.virustotal.com/gui/file/8cd35c94df0cbcb14731fc64bf61a94586c07b544f48f1d722e2a42ac9f64f4d" target="_blank"><img title="VirusTotal Result" src="http://freedom4all.unaux.com/virustotal-icon.svg" width="16" height="16"> </a> <br> <br>
+<a class="link" href="https://mega.nz/file/UvkASRaZ#bV5Lfh_ivOb_-5ooMkckdj4SzCzHQd8GSCiJN-nisxE" target="_blank">1.1.1.1 Unlimited 6.29 (all arm) (MEGA)</a> <a class="link" href="https://www.virustotal.com/gui/file/25241f51cc050569e42e397650ab57ea7763242e46d0058d84f2662b47242b9f" target="_blank"><img title="VirusTotal Result" src="http://freedom4all.unaux.com/virustotal-icon.svg" width="16" height="16"> </a> <br> 
+<a class="link" href="https://mega.nz/file/1zEhGQBI#Fe002xMAAAgslLL5yRnNbsOvk1bl7ff7Qd4YC-G37Cg" target="_blank">1.1.1.1 ZeroTrust 6.29 (all arm) (MEGA)</a> <a class="link" href="https://www.virustotal.com/gui/file/8cd35c94df0cbcb14731fc64bf61a94586c07b544f48f1d722e2a42ac9f64f4d" target="_blank"><img title="VirusTotal Result" src="http://freedom4all.unaux.com/virustotal-icon.svg" width="16" height="16"> </a> <br> <br>
+<a class="link" href="https://apps.apple.com/us/app/1-1-1-1-faster-internet/id1423538627" target="_blank">1.1.1.1: Faster Internet (App Store)</a> <br> <br> 
+<a class="link" href="https://install.appcenter.ms/orgs/cloudflare/apps/1.1.1.1-windows-1/distribution_groups/release" target="_blank">1.1.1.1 (windows) (appcenter.ms - cloudflare) &#127381</a> <br>
+<a class="link" href="https://install.appcenter.ms/orgs/cloudflare/apps/1.1.1.1-macos-1/distribution_groups/release" target="_blank">1.1.1.1 (macOS) (appcenter.ms - cloudflare) &#127381</a> <br> <br>
+<a class="link" href="https://www.udrop.com/KGaa/Cloudflare_WARP_Release-x64_v2023.7.160.0.msi" target="_blank">1.1.1.1 2023.7.160.0 (windows) (udrop)</a> <br>
+<a class="link" href="https://mega.nz/file/M3kkAByY#Sr3mYcscR-nXx5fxZ1NZadEkUBm_L2W6tk6NN75PRlU" target="_blank">1.1.1.1 2023.7.160.0 (windows) (MEGA)</a> <br> <br>
+<a class="link" href="https://www.udrop.com/Kpcq/Cloudflare_WARP.zip" target="_blank">1.1.1.1 (macOS) (udrop)</a> <p></p>
+</div>
+
+<button type="button" class="collapsible">Geph <i class="fa fa-github" ></i> - <i class="fa fa-windows"style="font-size:14px"></i> <i class="fa fa-android" style="font-size:14px"></i> <i class="fa fa-linux"style="font-size:14px"></i></button>
+<div class="content"> <br>
+<a class="link" href="https://github.com/geph-official" target="_blank">Geph (Project on GitHub)</a> <i class="fa fa-github"></i> <br>
+<a class="link" href="https://www.udrop.com/KrMB/geph-android.apk" target="_blank">Geph android 4.8.5 (all arm) (udrop)</a> <br>
+<a class="link" href="https://www.udrop.com/KrMQ/geph-windows-setup.exe" target="_blank">Geph windows 4.8.9 (udrop)</a> <br>
+<a class="link" href="https://www.udrop.com/KrMA/geph-macos.dmg" target="_blank">Geph macOS 4.8.9 (udrop)</a> <br> 
+<a class="link" href="https://www.udrop.com/KrMz/Geph-x86_64.flatpak" target="_blank">Geph Linux 4.8.9 (udrop)</a> <br> <br>
+
+<a class="link" href="https://mega.nz/file/JjETXB5b#-kCjSKXPwdCk0ygMx6v4zghshX6Q_FZtpHvP6XaU2ss" target="_blank">Geph android 4.8.5 (all arm) (MEGA)</a> <br>
+<a class="link" href="https://mega.nz/file/U2lGRTSa#uGSInnK-qG6xUEmvvbEzqlbWhvBv1Zlkj5ZgXPZmNBY" target="_blank">Geph windows 4.8.9 (MEGA)</a> <br>
+<a class="link" href="https://mega.nz/file/J3kwjTyI#dyWiUNnqXnZ7AAwRdCFHpKoCPhxI_I7lUDTRnd8rmg0" target="_blank">Geph macOS 4.8.9 (MEGA)</a> <br> 
+<a class="link" href="https://mega.nz/file/xr1GTKAQ#7ArEbIZJzW3NjWox0JC8ed78LGnwnZc6UYgUNfCUUzs" target="_blank">Geph Linux 4.8.9 (MEGA)</a> <p></p>
+</div>
+
+<button type="button" class="collapsible">V2Box <i class="fa fa-apple" style="font-size:14px"></i></button> 
+<div class="content"> <br>
+  <p> V2box - VPN Internet network proxy , Supports multiple proxy protocols, such as Shadowsocks, V2ray, Vmess, Trojan , SSH </p>
+  <p>add Subscription: Configs button >> plus (+) button >> "Add Subscription" button >> add "custom name" >> paste Subscription URL from "Mix Config Subscription" in site list >> "Add Subscribe" button >> back to "Home" button >> "Slide to Connect"</p>
+<a class="link" href="https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690" target="_blank">V2Box - V2ray Client (App Store)</a> <p></p>
+</div>
+
+<button type="button" class="collapsible">Outline <i class="fa fa-windows"style="font-size:14px"></i> <i class="fa fa-android" style="font-size:14px"></i></button>
+<div class="content"> <br>
+<a class="link" href="https://s3.amazonaws.com/outline-releases/client/android/stable/Outline-Client.apk" target="_blank">Outline (all arm) (Direct Link)</a> <br> 
+<a class="link" href="https://www.udrop.com/8fwd/outline-v1.10.0.apk" target="_blank">Outline (all arm) (udrop)</a> <br> <br> 
+<a class="link" href="https://s3.amazonaws.com/outline-releases/client/windows/stable/Outline-Client.exe" target="_blank">Outline (windows) (Direct Link)</a> <br>
+<a class="link" href="https://www.udrop.com/8fwn/Outline-Client.exe" target="_blank">Outline (windows) (udrop)</a> <br> <br>
+<a class="link" href="https://itunes.apple.com/us/app/outline-app/id1356178125" target="_blank">Outline (macOS) (itunes)</a> <br> <br> <br> <br>
+<a class="link" href="ssconf://s3.amazonaws.com/outdynconprd/by1s8duh7bcx662e2hxj4ukg26cgx6opsopixxc7z8o24bddukbb4nyery3m08b4.json#F4A.unaux.com" target="_blank">Outline Serever01 (Paskoocheh)</a> <br>
+<a class="link" href="ssconf://s3.amazonaws.com/beedynconprd/yqsvx6kg4iykcgz84s8uw0bwp49opmhhzpeu3k0etwer8fqbo08jvcle6c6gg2dc.json#F4A.unaux.com" target="_blank">Outline Serever02 (BeePass)</a> <br> <br>
+</div>
+
+<button type="button" class="collapsible">Rethink DNS + Firewall <i class="fa fa-android" style="font-size:14px"></i></button>
+<div class="content"> <br>
+<a class="link" href="https://dl.rethinkdns.com/app" target="_blank">Rethink DNS + Firewall (all arm) (rethinkdns.com)</a> <br> <br>
+<a class="link" href="https://www.udrop.com/88rb/rethink-29.apk" target="_blank">Rethink DNS + Firewall (all arm) (udrop)</a> <p></p>
+</div>
+
+<button type="button" class="collapsible">ArgoVPN <i class="fa fa-android" style="font-size:14px"></i></button>
+<div class="content"> <br>
+<a class="link" href="https://s3.amazonaws.com/argovpn/argovpn-universal.apk" target="_blank">ArgoVPN (all arm) (Direct Link) &#127381</a> <br> <br>
+<a class="link" href="https://www.udrop.com/KGam/argovpn-v2.4-universal_v2.4_(Build_5760).apk" target="_blank">ArgoVPN 2.4 (Build 5760) (all arm) (udrop)</a> <br> 
+<a class="link" href="https://mega.nz/file/kzdBmB5R#GRKoQ-OG6cE56Ue2TQLir1QIMT6mejoZQ8QQjE0As7g" target="_blank">ArgoVPN 2.4 (Build 5760) (all arm) (MEGA)</a> <br> <br>
+<a class="link" href="https://bridge.argovpn.com" target="_blank">ArgoVPN Bridge</a> <p></p>
+</div>
+
+<button type="button" class="collapsible">MxTunnel Pro <i class="fa fa-android" style="font-size:14px"></i></button>
+<div class="content"> <br>
+<a class="link" href="http://freedom4all.unaux.com/server/DLServer/MxTunnel-v8.apk" target="_blank">MxTunnel Pro v8 (all arm) (Direct Link) </a> <a class="link" href="https://www.virustotal.com/gui/file/e971a6c76c0c420ef18d75cdab40c5dabbd17e98a47ac162ee16636502177edb" target="_blank"><img title="VirusTotal Result" src="http://freedom4all.unaux.com/virustotal-icon.svg" width="16" height="16"> </a><br> <br>
+<a class="link" href="https://www.udrop.com/88ra/MxTunnel-v8.apk" target="_blank">MxTunnel Pro v8 (all arm) (udrop)</a> <a class="link" href="https://www.virustotal.com/gui/file/e971a6c76c0c420ef18d75cdab40c5dabbd17e98a47ac162ee16636502177edb" target="_blank"><img title="VirusTotal Result" src="http://freedom4all.unaux.com/virustotal-icon.svg" width="16" height="16"> </a> <br>
+<a class="link" href="https://mega.nz/file/h2NiwQxI#XKJk1H8FpZGwc92Xu7Jz_dKg6dGIS2ECCr0CsDbajWA" target="_blank">MxTunnel Pro v8 (all arm) (MEGA)</a> <a class="link" href="https://www.virustotal.com/gui/file/e971a6c76c0c420ef18d75cdab40c5dabbd17e98a47ac162ee16636502177edb" target="_blank"><img title="VirusTotal Result" src="http://freedom4all.unaux.com/virustotal-icon.svg" width="16" height="16"> </a> <p></p>
+ <p></p>
+</div>
+
+<button type="button" class="collapsible">FxTunnel Pro <i class="fa fa-android" style="font-size:14px"></i></button>
+<div class="content"> <br>
+<a class="link" href="http://freedom4all.unaux.com/server/DLServer/FxTunnel-v1.apk" target="_blank">FxTunnel Pro v1 (all arm) (Direct Link)</a> <a class="link" href="https://www.virustotal.com/gui/file/b4b8833a2c864b2e17704a6a9ce2550a361c33bd707c154fac1bd8729d24101a" target="_blank"><img title="VirusTotal Result" src="http://freedom4all.unaux.com/virustotal-icon.svg" width="16" height="16"> </a><br> <br>
+<a class="link" href="https://www.udrop.com/88rj/FxTunnel-v1.apk" target="_blank">FxTunnel Pro v1 (all arm) (udrop)</a> <a class="link" href="https://www.virustotal.com/gui/file/b4b8833a2c864b2e17704a6a9ce2550a361c33bd707c154fac1bd8729d24101a" target="_blank"><img title="VirusTotal Result" src="http://freedom4all.unaux.com/virustotal-icon.svg" width="16" height="16"> </a> <br> 
+<a class="link" href="https://mega.nz/file/Q2F1lQQA#JIh3rH9VfEQ-nj_EBSM5hcbhmMcaZclGBdkX28K1xoQ" target="_blank">FxTunnel Pro v1 (all arm) (MEGA)</a> <a class="link" href="https://www.virustotal.com/gui/file/b4b8833a2c864b2e17704a6a9ce2550a361c33bd707c154fac1bd8729d24101a" target="_blank"><img title="VirusTotal Result" src="http://freedom4all.unaux.com/virustotal-icon.svg" width="16" height="16"> </a><p></p>
+</div>
+
+<button type="button" class="collapsible">MHR Tunnel VIP <i class="fa fa-android" style="font-size:14px"></i></button>
+<div class="content"> <br>
+<a class="link" href="https://www.udrop.com/8cPE/MHRTunnelVIP-v4.apk" target="_blank">MHR Tunnel VIP (all arm) (udrop)</a> <a class="link" href="https://www.virustotal.com/gui/file/693225e1acd15a58500328e7bf19414882119ecdc2110fc376cdf61ad7f24491" target="_blank"><img title="VirusTotal Result" src="http://freedom4all.unaux.com/virustotal-icon.svg" width="16" height="16"> </a> <p></p>
+</div>
+
+<button type="button" class="collapsible">Paskoocheh <i class="fa fa-android" style="font-size:14px"></i></button>
+<div class="content">
+    <p>Paskoocheh is a free and secure store.  Not just for the VPN!  Rather, it's a safe place for easy access to a wide range of apps, plus everything you want to get past the filternet.</p>
+<a class="link" href="https://paskoocheh.com/tools/42/android/download" target="_blank">Paskoocheh (android - all arm) (Direct Link)</a> <br> <br>
+<a class="link" href="https://www.udrop.com/8fwf/paskoocheh.apk" target="_blank">Paskoocheh (android - all arm) (udrop)</a> <p></p>
+</div>
+
+<button type="button" class="collapsible">Psiphon <i class="fa fa-windows"style="font-size:14px"></i> <i class="fa fa-android" style="font-size:14px"></i> <i class="fa fa-apple" style="font-size:14px"></i></button>
+<div class="content"> <br>
+<a class="link" href="https://www.udrop.com/KrJi/Psiphon_Pro_v381-build_381.apk" target="_blank">Psiphon Pro 381 B381 (android - all arm) (udrop)</a> <a class="link" href="https://www.virustotal.com/gui/file/7307e67be5478ac8f26495b31e3d06b050f69c83ae21a123e9a68c58f6f74bed" target="_blank"><img title="VirusTotal Result" src="http://freedom4all.unaux.com/virustotal-icon.svg" width="16" height="16"> </a> <br>
+<a class="link" href="https://apps.apple.com/us/app/psiphon/id1276263909" target="_blank">Psiphon (App Store)</a> <br> <br>
+<a class="link" href="http://freedom4all.unaux.com/server/DLServer/psiphon3.exe" target="_blank">Psiphon 3 (windows) (Direct Link)</a> <a class="link" href="https://www.virustotal.com/gui/file/6065d51cfe7ff4ba6e8bfa5e4e064413b11b0e8ba1e4727371c0a296be85e92d" target="_blank"><img title="VirusTotal Result" src="http://freedom4all.unaux.com/virustotal-icon.svg" width="16" height="16"> </a> <br>
+<a class="link" href="https://www.udrop.com/89yM/psiphon3.exe" target="_blank">Psiphon 3 (windows) (udrop)</a> <a class="link" href="https://www.virustotal.com/gui/file/6065d51cfe7ff4ba6e8bfa5e4e064413b11b0e8ba1e4727371c0a296be85e92d" target="_blank"><img title="VirusTotal Result" src="http://freedom4all.unaux.com/virustotal-icon.svg" width="16" height="16"> </a> <br>
+<a class="link" href="https://mega.nz/file/Qv9iTZYJ#5qZpZE87mbmtfz2UK0DN2m2ayOOWS-3M23ue44FeCAE" target="_blank">Psiphon 3 (windows) (MEGA)</a> <a class="link" href="https://www.virustotal.com/gui/file/6065d51cfe7ff4ba6e8bfa5e4e064413b11b0e8ba1e4727371c0a296be85e92d" target="_blank"><img title="VirusTotal Result" src="http://freedom4all.unaux.com/virustotal-icon.svg" width="16" height="16"> </a> <p></p>
+</div>
+
+<button type="button" class="collapsible">OOS Browser <i class="fa fa-android" style="font-size:14px"></i></button>
+<div class="content">
+  <p>OOS Browser is a android Chromium-based browser that uses the "Great Fire" layer to provide user access to the free internet without VPN.</p>
+<a class="link" href="https://www.udrop.com/88rk/OOS_Browser.apk" target="_blank">OOS Browser (all arm) (udrop)</a> <a class="link" href="https://www.virustotal.com/gui/file/e30ed71620821a13e6207aee69b00c86c0b400af7ca4bff74b8f9d2f33fc934b" target="_blank"><img title="VirusTotal Result" src="http://freedom4all.unaux.com/virustotal-icon.svg" width="16" height="16"> </a> <p></p>
+</div>
+
+<!-- <button type="button" class="collapsible">Open Section 4</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequauuu.</p>
+</div> -->
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
